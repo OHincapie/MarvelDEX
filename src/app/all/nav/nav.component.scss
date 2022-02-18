@@ -1,0 +1,23 @@
+.mat-tab-list {
+    background-color: #B2161B;
+}
+
+/* Styles for tab labels */
+.mat-tab-label {
+    min-width: 25px !important;
+    color: #fff;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    min-width: 25   px !important;
+    background-color: #fff;
+    color: #000;    
+    font-weight: 700;
+    opacity: 1;
+}
+
+

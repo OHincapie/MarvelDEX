@@ -1,0 +1,88 @@
+.container--grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    background-image: url('../../../assets/img/fondo.jpg');
+    background-size: auto ;
+    width: auto;
+}
+
+.content{
+    grid-column: 2/4;
+    margin:0px 30px;
+    height: auto;
+}
+.marvelDex{
+    background-color: #000;
+    margin-top:50px; display: grid;
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 125vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.contenedor--marvelDex--grid{
+    grid-template-columns: repeat(2, 1fr);   
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.imagen--titulo{
+    width: 150px;
+    
+}
+
+.dex{
+    font-weight: 700;
+    font-size: 35px;
+    
+    color: #fff;
+}
+
+.nav{
+    min-width: 25px !important;
+    color: #fff;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0 auto;
+}
+
+.active{
+    min-width: 25px !important;
+    background-color: #fff;
+    color: #000;    
+    font-weight: 700;
+    opacity: 1!important;
+}
+
+.mat-tab-link.mat-tab-link-active {
+    min-width: 25   px !important;
+    background-color: #fff;
+    color: #000;    
+    font-weight: 700;
+    opacity: 1;
+}
+
+.mat-tab-links {
+ justify-content: center;
+}
+
+.enlace{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #000;
+    color: #fff;
+}

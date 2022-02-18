@@ -1,0 +1,32 @@
+<mat-card class="example-card contenido">
+    <div class="header">
+      
+      <mat-card-title class="titulo">{{data.nombre}}</mat-card-title>
+      <mat-card-subtitle class="subtitulo">{{data.id}}</mat-card-subtitle>
+    </div>
+    <div class="crop-image">
+      <img mat-card-image [src]="data.img" alt="{{data.nombre}}">
+    </div>
+    
+    <mat-card-content class="descripcion">
+        <h4>Descripción.</h4>
+      <p>
+        {{data.descripcion}}
+      </p>
+    </mat-card-content>
+    
+
+    <mat-card-content class="descripcion">
+        <p>Número de comics: <span>
+            {{data.noComics}}
+        </span>
+          
+        </p>
+      </mat-card-content>
+
+      <div mat-dialog-actions>
+        <button mat-raised-button  (click)="onNoClick()">Cerrar</button>
+        
+      </div>
+
+  </mat-card>

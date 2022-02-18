@@ -1,0 +1,21 @@
+<mat-toolbar class="header" >
+    <mat-toolbar-row>
+        <div class="container">
+            <div class="row between-xs ">
+
+                <div class="imagen-header">
+                    <img src="assets/img/marvel.png" alt="Marvel logo">
+                </div>
+                <nav class="nav" *ngIf="!globalService.login">
+                    <a mat-raised-button routerLink="/user/register">Registrarse</a>
+                    <a mat-raised-button routerLink="/user/login">Log in</a>                 
+                </nav>
+                <nav class="nav" *ngIf="globalService.login">
+                    
+                    <a mat-raised-button routerLink="/user/login" (click)="logOut()">Log out</a>                 
+                </nav>
+
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

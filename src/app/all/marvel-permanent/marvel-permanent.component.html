@@ -1,0 +1,35 @@
+<div class="container--grid">
+
+    <div class="marvelDex">
+
+        <!-- MarvelDEX de la parte izquierda de la pantalla
+        itera sobre cada objeto del arreglo characterSelected -->
+        <div class="contenedor--marvelDex--grid">
+            <div class="titulo"> <img class="imagen--titulo" src="assets/img/marvel.png" alt="Marvel logo"><span class="dex">DEX</span></div>
+            <div class="sub">
+                <h2>Tus personajes de Marvel conocidos:</h2>
+            </div>
+            <div class="contenedor--card">
+                <!-- Itera sobre cada objeto y manda la data a las variables INPUT del componente app-character-->
+                <app-character *ngFor="let a of charactersService.characterSelected" [nombre]="a.name" [id]="a.id" img="{{a.thumbnail.path}}.{{a.thumbnail.extension}}" [descripcion]="a.description" [comics]="a.comics" ></app-character>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Tabla de la parte derecha -->
+    <div class="content">
+        <!-- Tabs con la tabla de busqueda y la tabla de personajes guardados -->
+        <nav mat-tab-nav-bar class="nav">
+            <a mat-tab-link routerLink="/marvelDex/search" routerLinkActive="active" class="enlace">Busqueda</a>
+            <a mat-tab-link routerLink="/marvelDex/save" routerLinkActive="active" class="enlace">Guardados</a>
+        </nav>
+
+        <!-- Dependiendo el router del TAB mostrara la tabla busqueda o guardados -->
+        <router-outlet></router-outlet>
+    </div>
+
+
+</div>

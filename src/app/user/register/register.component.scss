@@ -1,0 +1,30 @@
+.container--form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+.card{
+      padding: 100px;
+      padding-top: 30px;
+}
+
+.mat-card-header .mat-card-title {
+ font-size: 25px;
+ text-align: center;
+}
+
+.mat-card-header {
+ display: block;
+ margin-bottom: 10px;
+}
+
+mat-form-field {
+    
+    width: 300px;
+}
+
+.error {
+    background-color: #ff6961;
+  }

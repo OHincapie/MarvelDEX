@@ -1,0 +1,20 @@
+<mat-card class="example-card contenido">
+    <div class="header">
+      
+      <mat-card-title class="titulo">{{nombre}}</mat-card-title>
+      <mat-card-subtitle class="subtitulo">{{id}}</mat-card-subtitle>
+    </div>
+    <div class="crop-image">
+      <img mat-card-image [src]="img" alt="{{nombre}}">
+    </div>
+    
+    <!-- <mat-card-content class="descripcion">
+      <p>
+        {{descripcion}}
+      </p>
+    </mat-card-content> -->
+    <mat-card-actions>
+      <button mat-raised-button (click)="openDialog(id)">Ver detalle</button>
+      <button mat-raised-button color="warn" (click)="deleteChar(id)">Eliminar</button>
+    </mat-card-actions>
+  </mat-card>
