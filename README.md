@@ -28,4 +28,4 @@ Podemos ver el HASH y el API_KEY en el archivo environment.prod.ts
 ---
 
 ## Autor
-* **Andrés Villanueva** - [OHincapie](https://github.com/OHincapie
+* **Oscar Hincapie** - [OHincapie](https://github.com/OHincapie
